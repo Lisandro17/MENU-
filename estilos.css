@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /*ANIMACION MENU DISPLAY FLEX*/
+}
+nav{
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+   
+}
+
+nav a{
+    display: inline-block;
+    color:#fff;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: 300;
+}
+/*ANIMACION MENU*/
+#icono{
+    animation: moverIzquierda 1s ease-in-out;
+    z-index: 100;
+}
+.contenedor{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+img{
+    display: block;
+    width: 500px;
+    object-fit: cover;
+    
+    animation: moverArriba 1s ease-in;
+}
+
+header .contenedor .contenedor-textos-header{
+    width: 50%;
+}
+header .contenedor .contenedor-textos-header h1{
+    font-size: 60px;
+    color:#fff;
+    
+    animation: moverDerecha 1s ease-in;
+}
+
+header .contenedor .contenedor-textos-header h2{
+    font-size: 30px;
+    color:#fff;
+    margin-top: 10px;
+
+    animation: moverIzquierda 1s ease-in;
+}
+
+header .contenedor-textos-header .contenedor-contratanos{
+    margin-top: 50px;
+    animation: moverArriba 1s ease-in;
+}
+header .contenedor-textos-header .contenedor-contratanos a{
+color:#fff;
+text-decoration: none;
+font-family: arial;
+border:1px solid #fff;
+padding: 15px 20px;
+
+}
+
+/*CONTENEDOR OLA WAVE ABAJO*/
+.contenedor-wave{
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*PROPIEDADES DEL MENU PRINCIPAL*/
+.enlaces{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    top: 0;
+    background: #000;
+    width: 100%;
+    left: 0;
+    transition: all 1s ease;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   
+}
+
+.uno{
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 0 0);
+}
+.dos{
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0);
+}
+
+/*ANIMACIONES CON KEYFRAMES*/
+@keyframes moverIzquierda{
+0%{
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+@keyframes moverDerecha{
+    0%{
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+      }
+    
+    }
+
+
+    @keyframes moverArriba{
+        0%{
+          opacity: 0;
+          transform: translateY(100px);
+        }
+        
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+          }
+        
+        }
